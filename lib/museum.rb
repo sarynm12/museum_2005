@@ -39,4 +39,12 @@ class Museum
     lottery_contestants
   end
 
+  def draw_lottery_winner(exhibit)
+    lottery_contestants = []
+    @patrons.each do |patron|
+      lottery_contestants << patron if patron.interests.include?(exhibit.name)
+    end 
+    lottery_contestants.sample
+  end
+
 end
