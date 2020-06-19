@@ -4,8 +4,7 @@ require './lib/patron'
 require './lib/exhibit'
 require 'pry'
 
-
-class PatronTest < MiniTest::Test
+class PatronTest < Minitest::Test
 
   def test_it_exists
     patron_1 = Patron.new("Bob", 20)

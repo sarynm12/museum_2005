@@ -3,12 +3,10 @@ require 'minitest/pride'
 require './lib/exhibit'
 require 'pry'
 
-
-class ExhibitTest < MiniTest::Test
+class ExhibitTest < Minitest::Test
 
   def test_it_exists
     exhibit = Exhibit.new({name: "Gems and Minerals", cost: 0})
-    binding.pry
     assert_instance_of Exhibit, exhibit
   end
 
